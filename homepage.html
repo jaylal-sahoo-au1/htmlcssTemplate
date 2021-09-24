@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+*{
+ margin:0;
+ padding:0;
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.container{
+    width:100vw;
+    height:100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 1fr 1fr 100px;
+    gap:10px;
+    padding:10px;
+    box-sizing: border-box;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://kinsta.com/wp-content/uploads/2019/08/How-to-Create-a-Company-Page-on-Linkedin.png");
+    background-size: cover;
+    background-position:center;
+}
+
+.header{
+    grid-column-start:1;
+    grid-column-end:4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+}
+
+
+
+ul li{
+    list-style-type: none;
+    padding: 7px;
+    border: 1px solid transparent;
+    margin: 7px;
+    border-radius: 2px;
+    color:#fff;
+    transition: 0.6s ease;
+    cursor: pointer;
+}
+
+ul li:hover{
+    background-color: #fff;
+    color:#000;
+}
+
+ul li.active{
+    background-color: #fff;
+    color:#000;
+}
+
+.content1{
+    grid-row-start:2;
+    grid-row-end:4;
+    grid-column-start: 1;
+    grid-column-end:4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer{
+grid-row-start:4;
+grid-column-start:1;
+grid-column-end:4;
+}
+
+img{
+    width:50px;
+}
+
+.content{
+    font-size: 40px;
+    color: #fff;
+    letter-spacing: 5px;
+}
+
+.btn{
+    padding:15px;
+    color:#fff;
+    background-color: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    border:1px solid #fff;
+    line-height: 10px;
+    transition: 0.6s ease;
+}
+
+.btn:hover{
+    color:#000;
+    background-color:#fff;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header">
+      <span><img src="https://png.pngtree.com/png-clipart/20190604/original/pngtree-creative-company-logo-png-image_1197025.jpg"/></span>
+        <ul>
+            <li class="active">Home</li>
+            <li>Services</li>
+            <li>Gallery</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+  </div>
+  <div class="content1">
+     <div class="content">DREAMOGRAPHICS</div>
+     <div>
+     <button class="btn">Watch Now</button>
+     <button class="btn">Learn More</button>
+     </div>
+    </div>
+  <div class="footer"></div>
+</div>
+
+</body>
+</html>
